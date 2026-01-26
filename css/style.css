@@ -65,6 +65,7 @@ img {
 
 .logo,
 .logo a {
+    width: auto;
     height: 2rem;
     max-height: 1rem;
     display: flex;
@@ -312,7 +313,6 @@ img {
     transform: translateY(2px);
 }
 
-/* PCのみ hover */
 @media (hover: hover) and (pointer: fine) {
     .cv:hover .card {
         flex: 1;
@@ -333,6 +333,21 @@ img {
     .cv:hover .card:hover .card-txt {
         opacity: 1;
         position: static;
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .card-txt {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity .3s ease, max-height .3s ease;
+        position: static;
+    }
+
+    .card.active .card-txt {
+        opacity: 1;
+        max-height: 200px;
     }
 }
 
