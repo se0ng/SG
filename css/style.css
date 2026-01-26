@@ -343,6 +343,25 @@ img {
     color: #f2f3f4;
 }
 
+.card.active {
+    background-color: #222;
+    color: #f2f3f4;
+    border-radius: 1.6rem;
+}
+
+.card.active .card-img {
+    width: 60%;
+}
+
+.card.active .card-img img {
+    border-radius: 1rem;
+}
+
+.card.active .card-txt {
+    opacity: 1;
+    position: static;
+}
+
 @media (min-width: 768px) {
     .cv {
         flex-direction: row;
