@@ -314,12 +314,20 @@ img {
 }
 
 @media (hover: hover) and (pointer: fine) {
+    .card-txt {
+        opacity: 0;
+        position: absolute;
+    }
+
     .cv:hover .card {
         flex: 1;
     }
 
     .cv:hover .card:hover {
         flex: 3;
+        background-color: #222;
+        color: #f2f3f4;
+        border-radius: 1.6rem;
     }
 
     .cv:hover .card:hover .card-img {
@@ -336,45 +344,28 @@ img {
     }
 }
 
+
 @media (hover: none) and (pointer: coarse) {
+    .card {
+        background-color: #222;
+        color: #f2f3f4;
+        border-radius: 1.6rem;
+        transition: .5s all;
+        height: auto;
+    }
+
+    .card-img {
+        width: 60%;
+    }
+
+    .card-img img {
+        border-radius: 1rem;
+    }
+
     .card-txt {
-        opacity: 0;
-        max-height: 0;
-        overflow: hidden;
-        transition: opacity .3s ease, max-height .3s ease;
+        opacity: 1;
         position: static;
     }
-
-    .card.active .card-txt {
-        opacity: 1;
-        height: 40vh;
-    }
-}
-
-.card:hover {
-    transition: .5s all;
-    border-radius: 1.6rem;
-    background-color: #222;
-    color: #f2f3f4;
-}
-
-.card.active {
-    background-color: #222;
-    color: #f2f3f4;
-    border-radius: 1.6rem;
-}
-
-.card.active .card-img {
-    width: 60%;
-}
-
-.card.active .card-img img {
-    border-radius: 1rem;
-}
-
-.card.active .card-txt {
-    opacity: 1;
-    position: static;
 }
 
 @media (min-width: 768px) {
