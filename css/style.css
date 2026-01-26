@@ -36,9 +36,11 @@ body {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
+    display: block;
 }
+
 
 /* TOP */
 .top {
@@ -65,12 +67,17 @@ img {
 
 .logo,
 .logo a {
+    height: 1rem;
     width: auto;
-    height: 2rem;
-    max-height: 1rem;
+
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.logo img {
+    height: 100%;
+    width: auto;
 }
 
 .menu {
@@ -131,6 +138,12 @@ img {
 .kv-t-img {
     height: 6rem;
     margin-top: 2rem;
+}
+
+.kv-t-img img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
 }
 
 .kv-b {
