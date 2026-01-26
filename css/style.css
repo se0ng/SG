@@ -347,7 +347,7 @@ img {
 
     .card.active .card-txt {
         opacity: 1;
-        max-height: 200px;
+        height: 40vh;
     }
 }
 
