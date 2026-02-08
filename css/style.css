@@ -214,8 +214,8 @@ img {
     height: 0;
     padding: 4rem;
     background: var(--glass-bg);
-    backdrop-filter: blur(8px) saturate(var(--saturation));
-    -webkit-backdrop-filter: blur(8px) saturate(var(--saturation));
+    backdrop-filter: blur(1.5px) saturate(var(--saturation));
+    -webkit-backdrop-filter: blur(1.5px) saturate(var(--saturation));
     box-shadow: var(--glass-effect);
     border-radius: 1rem;
     z-index: 1;
