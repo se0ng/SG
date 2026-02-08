@@ -213,11 +213,11 @@ img {
     width: 0;
     height: 0;
     padding: 4rem;
-    background-color: rgba(255, 255, 255, .4);
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
+    background: var(--glass-bg);
+    backdrop-filter: blur(8px) saturate(var(--saturation));
+    -webkit-backdrop-filter: blur(8px) saturate(var(--saturation));
+    box-shadow: var(--glass-effect);
     border-radius: 1rem;
-    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, .2);
     z-index: 1;
 }
 
